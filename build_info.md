@@ -1,6 +1,4 @@
-# IBM Developer UK
-
-Home of IBM Developer UK Material
+# Building for your machine
 
 To install this and run it locally follow these steps
 
