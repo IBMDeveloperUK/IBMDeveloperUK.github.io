@@ -129,14 +129,9 @@ let listData = data,
   i;
 
 for (i = 0; i < numberOfListItems; i++) {
-  console.log("in loop");
-  mediaContainer = document.createElement("div");
-  mediaContainer.className = "media";
-  document.getElementById("team-member-container").appendChild(mediaContainer);
-
   teamMemberCol = document.createElement("div");
   teamMemberCol.className = "team-member-col";
-  mediaContainer.appendChild(teamMemberCol);
+  document.getElementById("media").appendChild(teamMemberCol);
 
   teamMember = document.createElement("div");
   teamMember.className = "team-member-" + listData[i].name + " team-member ";
