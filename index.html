@@ -4,29 +4,29 @@ title: Home
 description: IBM Developer UK Material
 url: https://ibmdeveloperuk.github.io/
 ---
+
 <!-- Header -->
 <script src="./js/resource-integrety.js"></script>
-<script src="js/team-members.js"></script>
 
-<script> 
-  $(document).ready(function(){
-    $(".read").click(function(){
-       $(this).prev().toggle();
-       $(this).siblings('.dots').toggle();
-       if($(this).text()=='read more'){
-   $(this).text('read less');
-       }
-       else{
-   $(this).text('read more');
-       }
+<script>
+  $(document).ready(function () {
+    $(".read").click(function () {
+      $(this).prev().toggle();
+      $(this).siblings(".dots").toggle();
+      if ($(this).text() == "read more") {
+        $(this).text("read less");
+      } else {
+        $(this).text("read more");
+      }
     });
   });
 </script>
 
 <div class="header home-header text-center">
-    <h1 class="subheading"><br>
-      Welcome to IBM Developer UK
-    </h1>
+  <h1 class="subheading">
+    <br />
+    Welcome to IBM Developer UK
+  </h1>
 </div>
 
 <!-- Our Team -->
@@ -34,11 +34,19 @@ url: https://ibmdeveloperuk.github.io/
   <div>
     <div class="text-center mb-50">
       <h1>Our Team</h1>
-     <h2><a href="https://twitter.com/CodeMeetup" target="_blank">Join us on Twitter</a></h2>
+      <h2>
+        <a href="https://twitter.com/CodeMeetup" target="_blank"
+          >Join us on Twitter</a
+        >
+      </h2>
     </div>
   </div>
-  <div id="team-member-container" class="d-flex flex-wrap justify-center our-team">
-    <script>
+  <div
+    id="team-member-container"
+    class="d-flex flex-wrap justify-center our-team"
+  >
+    <script src="./js/team-members.js"></script>
+    <!-- <script>
       var data = [{
         "name": "Liam",
         "pictureTitle": "Picture of Liam and his tech stack",
@@ -138,7 +146,7 @@ url: https://ibmdeveloperuk.github.io/
         readMore.innerHTML = "read more";
         teamMemberBio.appendChild(readMore);
       }
-    </script>
+    </script> -->
     <!-- <div class="media">
     <div class="team-member-col">
       <div class="team-member-liam team-member" title="Picture of Liam and his tech stack">
@@ -377,9 +385,9 @@ url: https://ibmdeveloperuk.github.io/
       </span>
       <button class ="read">read more</button>
       </div>
-    </div> -->
+    </div> 
+  </div>-->
   </div>
-</div>
 </div>
 
 <!-- Explore Projects -->
@@ -426,6 +434,3 @@ url: https://ibmdeveloperuk.github.io/
     </div>
   </div>
 </div>
-
-
-  
