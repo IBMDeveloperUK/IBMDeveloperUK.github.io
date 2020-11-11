@@ -6,6 +6,7 @@ url: https://ibmdeveloperuk.github.io/
 ---
 <!-- Header -->
 <script src="./js/resource-integrety.js"></script>
+<script src="js/team-members.js"></script>
 
 <script> 
   $(document).ready(function(){
@@ -29,7 +30,6 @@ url: https://ibmdeveloperuk.github.io/
 </div>
 
 <!-- Our Team -->
-
 <div class="section">
   <div>
     <div class="text-center mb-50">
@@ -37,9 +37,109 @@ url: https://ibmdeveloperuk.github.io/
      <h2><a href="https://twitter.com/CodeMeetup" target="_blank">Join us on Twitter</a></h2>
     </div>
   </div>
-  <div class="d-flex flex-wrap justify-center our-team">
-
-    <div class="media">
+  <div id="team-member-container" class="d-flex flex-wrap justify-center our-team">
+    <script>
+      var data = [{
+        "name": "Liam",
+        "pictureTitle": "Picture of Liam and his tech stack",
+        "tech": "Golang | Open Source",
+        "twitter": "https://twitter.com/LiamConroyH",
+        "github": "https://github.com/liamchampton",
+        "linkedin": "https://www.linkedin.com/in/liam-conroy-hampton/",
+        "bio": "Liam focuses on developer advocacy with a keen interest in Golang and open source",
+      },
+    
+      {
+        "name": "Yamini",
+        "pictureTitle":"Picture of Yamini her tech stack",
+        "tech": "Data Science | Node-RED | Watson API's",
+        "twitter": "https://twitter.com/yaminigrao",
+        "github": "https://github.com/YaminiRao",
+        "linkedin": "https://www.linkedin.com/in/yamini-rao/",
+        "bio": "As a Developer Advocate, Yamini compiles developer scenarios, workshops and training material",
+      }] 
+      console.log("team profile data array: ", data)
+    
+      let listData = data,
+          // Set up the loop that goes through the array 1 index at a time
+          numberOfListItems = listData.length,
+          i;
+      
+      for (i = 0; i < numberOfListItems; i++) {
+        mediaContainer = document.createElement("div");
+        mediaContainer.className = "media";
+        document.getElementById("team-member-container").appendChild(mediaContainer);
+    
+        teamMemberCol = document.createElement("div");
+        teamMemberCol.className = "team-member-col";
+        mediaContainer.appendChild(teamMemberCol);
+    
+        teamMember  = document.createElement("div");
+        teamMember.className = "team-member-"+listData[i].name+" team-member "
+        teamMember.title = listData[i].pictureTitle
+        teamMemberCol.appendChild(teamMember)
+    
+        techStack = document.createElement("span");
+        techStack.innerHTML = listData[i].tech;
+        teamMember.appendChild(techStack);
+    
+        memberName = document.createElement("h2");
+        memberName.innerHTML = listData[i].name;
+        teamMemberCol.appendChild(memberName);
+    
+        socialLinks = document.createElement("h3");
+        teamMemberCol.appendChild(socialLinks);
+    
+        twitterLink = document.createElement("a");
+        twitterLink.className = "social-button";
+        twitterLink.href = listData[i].twitter;
+        twitterLink.target = "_blank";
+        socialLinks.appendChild(twitterLink);
+    
+        twitterPic = document.createElement("img")
+        twitterPic.src = "assets/img/twitter.png"
+        twitterLink.appendChild(twitterPic)
+    
+        githubLink = document.createElement("a");
+        githubLink.className = "social-button";
+        githubLink.href = listData[i].github;
+        githubLink.target = "_blank";
+        socialLinks.appendChild(githubLink);
+    
+        githubPic = document.createElement("img")
+        githubPic.src = "assets/img/github.png"
+        githubLink.appendChild(githubPic)
+    
+        linkedinLink = document.createElement("a");
+        linkedinLink.className = "social-button";
+        linkedinLink.href = listData[i].linkedin;
+        linkedinLink.target = "_blank";
+        socialLinks.appendChild(linkedinLink);
+    
+        linkedinPic = document.createElement("img")
+        linkedinPic.src = "assets/img/linkedin.png"
+        linkedinLink.appendChild(linkedinPic)
+    
+        lineBreak = document.createElement("br");
+        teamMemberCol.appendChild(lineBreak);
+    
+        teamMemberBio = document.createElement("div");
+        teamMemberBio.className = "post";
+        teamMemberBio.innerHTML = listData[i].bio;
+        teamMemberCol.appendChild(teamMemberBio);
+    
+        threeDots = document.createElement("span")
+        threeDots.className = "dots";
+        threeDots.innerHTML = "..."
+        teamMemberBio.appendChild(threeDots);
+    
+        readMore = document.createElement("button");
+        readMore.className = "read";
+        readMore.innerHTML = "read more";
+        teamMemberBio.appendChild(readMore);
+      }
+    </script>
+    <!-- <div class="media">
     <div class="team-member-col">
       <div class="team-member-liam team-member" title="Picture of Liam and his tech stack">
         <span>Golang | Open Source</span>
@@ -277,7 +377,7 @@ url: https://ibmdeveloperuk.github.io/
       </span>
       <button class ="read">read more</button>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 </div>
