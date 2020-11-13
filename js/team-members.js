@@ -121,8 +121,6 @@ var data = [
   },
 ];
 
-console.log("team profile data array: ", data);
-
 let listData = data,
   // Set up the loop that goes through the array 1 index at a time
   numberOfListItems = listData.length,
@@ -178,6 +176,8 @@ for (i = 0; i < numberOfListItems; i++) {
   linkedinPic = document.createElement("img");
   linkedinPic.src = "assets/img/linkedin.png";
   linkedinLink.appendChild(linkedinPic);
+
+  // Used for team member bio - uncomment when fixed
 
   // lineBreak = document.createElement("br");
   // teamMemberCol.appendChild(lineBreak);
