@@ -1,6 +1,6 @@
 var data = [
   {
-    name: "Liam",
+    name: "Liam Hampton",
     pictureTitle: "Picture of Liam and his tech stack",
     tech: "Golang | Open Source",
     twitter: "https://twitter.com/LiamConroyH",
@@ -11,7 +11,7 @@ var data = [
   },
 
   {
-    name: "Yamini",
+    name: "Yamini Rao",
     pictureTitle: "Picture of Yamini and her tech stack",
     tech: "Data Science | Node-RED | Watson API's",
     twitter: "https://twitter.com/yaminigrao",
@@ -22,7 +22,7 @@ var data = [
   },
 
   {
-    name: "Ross",
+    name: "Ross Cruickshank",
     pictureTitle: "Picture of Ross and his tech stack",
     tech: "IOT | Node-RED | R",
     twitter: "https://twitter.com/rcruicks",
@@ -33,7 +33,7 @@ var data = [
   },
 
   {
-    name: "Ed",
+    name: "Ed Shee",
     pictureTitle: "Picture of Ed and his tech stack",
     tech: "Cloud and Containers",
     twitter: "https://twitter.com/ukcloudman",
@@ -44,7 +44,7 @@ var data = [
   },
 
   {
-    name: "Sean",
+    name: "Sean Tracey",
     pictureTitle: "Picture of Sean and his tech stack",
     tech: "Artificial Intelligence | IOT | Node-RED | Python",
     twitter: "https://twitter.com/seanmtraceyH",
@@ -55,7 +55,7 @@ var data = [
   },
 
   {
-    name: "Margriet",
+    name: "Margriet Groenendijk",
     pictureTitle: "Picture of Margriet and her team role",
     tech: "Data Science | Deep Learning |Python",
     twitter: "https://twitter.com/MargrietGr",
@@ -66,7 +66,7 @@ var data = [
   },
 
   {
-    name: "Matt",
+    name: "Matt Hamilton",
     pictureTitle: "Picture of Matt and his tech stack",
     tech: "Blockchain | Machine Learning | Data Science",
     twitter: "https://twitter.com/HammerToe",
@@ -77,7 +77,7 @@ var data = [
   },
 
   {
-    name: "Simon",
+    name: "Simon Baker",
     pictureTitle: "Picture of Simon and his team role",
     tech: "Integrated Accounts",
     twitter: "https://twitter.com/SimonARBaker",
@@ -88,7 +88,7 @@ var data = [
   },
 
   {
-    name: "Andrea",
+    name: "Andrea Frittoli",
     pictureTitle: "Picture of Andre and his tech stack",
     tech: "Containers | Serverless",
     twitter: "https://twitter.com/blackchip76",
@@ -99,7 +99,7 @@ var data = [
   },
 
   {
-    name: "Angela",
+    name: "Angela Bates",
     pictureTitle: "Picture of Angela and her team role",
     tech: "Programme Manager",
     twitter: "https://twitter.com/angelajbates",
@@ -110,7 +110,7 @@ var data = [
   },
 
   {
-    name: "Mo",
+    name: "Mo Haghighi",
     pictureTitle: "Picture of Mo and his team role",
     tech: "Head of Developer Advocacy (Europe)",
     twitter: "https://twitter.com/mohaghighi",
@@ -179,21 +179,21 @@ for (i = 0; i < numberOfListItems; i++) {
   linkedinPic.src = "assets/img/linkedin.png";
   linkedinLink.appendChild(linkedinPic);
 
-  lineBreak = document.createElement("br");
-  teamMemberCol.appendChild(lineBreak);
+  // lineBreak = document.createElement("br");
+  // teamMemberCol.appendChild(lineBreak);
 
-  teamMemberBio = document.createElement("div");
-  teamMemberBio.className = "post";
-  teamMemberBio.innerHTML = listData[i].bio;
-  teamMemberCol.appendChild(teamMemberBio);
+  // teamMemberBio = document.createElement("div");
+  // teamMemberBio.className = "post";
+  // teamMemberBio.innerHTML = listData[i].bio;
+  // teamMemberCol.appendChild(teamMemberBio);
 
-  threeDots = document.createElement("span");
-  threeDots.className = "dots";
-  threeDots.innerHTML = "...";
-  teamMemberBio.appendChild(threeDots);
+  // threeDots = document.createElement("span");
+  // threeDots.className = "dots";
+  // threeDots.innerHTML = "...";
+  // teamMemberBio.appendChild(threeDots);
 
-  readMore = document.createElement("button");
-  readMore.className = "read";
-  readMore.innerHTML = "read more";
-  teamMemberBio.appendChild(readMore);
+  // readMore = document.createElement("button");
+  // readMore.className = "read";
+  // readMore.innerHTML = "read more";
+  // teamMemberBio.appendChild(readMore);
 }
