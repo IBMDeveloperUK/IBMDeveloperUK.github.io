@@ -17,13 +17,16 @@
 }
 
 .project {
-  background-color: #e8e8e8;
+  background-color: #ffffff;
   margin: 15px;
   min-height: 300px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 25px;
+  border: 2px dotted #75acda; 
+  width : 300px;
 }
 
 .project > div > * + * {
@@ -118,6 +121,7 @@
     align-items: center;
     display: flex;
     width: 95%;
+    
   }
 
   .search {

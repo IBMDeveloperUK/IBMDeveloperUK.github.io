@@ -177,23 +177,9 @@ for (i = 0; i < numberOfListItems; i++) {
   linkedinPic.src = "assets/img/linkedin.png";
   linkedinLink.appendChild(linkedinPic);
 
-  // Used for team member bio - uncomment when fixed
 
-  // lineBreak = document.createElement("br");
-  // teamMemberCol.appendChild(lineBreak);
-
-  // teamMemberBio = document.createElement("div");
-  // teamMemberBio.className = "post";
-  // teamMemberBio.innerHTML = listData[i].bio;
-  // teamMemberCol.appendChild(teamMemberBio);
-
-  // threeDots = document.createElement("span");
-  // threeDots.className = "dots";
-  // threeDots.innerHTML = "...";
-  // teamMemberBio.appendChild(threeDots);
-
-  // readMore = document.createElement("button");
-  // readMore.className = "read";
-  // readMore.innerHTML = "read more";
-  // teamMemberBio.appendChild(readMore);
 }
+
+
+
+
