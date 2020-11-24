@@ -99,7 +99,7 @@ a:hover {
 .social-button {
   padding: 5px 10px;
 
-  color: #fff;
+  color: rgb(17, 11, 11);
   border-radius: 50px;
   display: inline-block;
 }
@@ -108,6 +108,19 @@ a:hover {
   background-color: #bfcbd6;
 }
 
+
+.bio-button {
+
+
+ border-radius: 12px;
+ padding: 5px 10px;
+ background-color: #c7cece;
+ opacity: 0.4;
+transition: 0.3s;
+}
+
+
+.bio-button:hover {opacity:2}
 /* Navigation wrapper */
 
 .more {
@@ -183,6 +196,7 @@ li a,
   text-decoration: none;
   font-size: 20px;
   padding-left: 10px;
+  border-radius: 30px;
 }
 
 .show-dd.active {
