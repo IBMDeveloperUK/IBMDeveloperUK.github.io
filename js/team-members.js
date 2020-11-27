@@ -178,6 +178,16 @@ for (i = 0; i < numberOfListItems; i++) {
   linkedinLink.appendChild(linkedinPic);
 
 
+  biolink = document.createElement("a")
+  biolink.className = "bio-button";
+  biolink.target = "_blank";
+  teamMemberCol.appendChild(biolink);
+
+  biopic = document.createElement("img");
+  biopic.src = "assets/img/bio.png";
+  teamMemberCol.appendChild(biopic);
+
+
 }
 
 

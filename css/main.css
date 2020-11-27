@@ -109,18 +109,14 @@ a:hover {
 }
 
 
-.bio-button {
 
+  .bio-button {
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
 
- border-radius: 12px;
- padding: 5px 10px;
- background-color: #c7cece;
- opacity: 0.4;
-transition: 0.3s;
-}
-
-
-.bio-button:hover {opacity:2}
+  
 /* Navigation wrapper */
 
 .more {
