@@ -4,7 +4,7 @@ node_js:
 rvm:
   - 2.5.1
 install:
-  - gem install bundler -v '1.17.3'
+  - gem install jekyll bundler
 before_script:
   - bundle install
 script:
